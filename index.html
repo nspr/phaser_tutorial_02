@@ -119,7 +119,7 @@ function update() {
 
         player.animations.play('right');
     }
-    if !(cursors.right.isDown || cursors.left.isDown)
+    if (!cursors.right.isDown && !cursors.left.isDown)
     {
         //  Stand still
         player.animations.stop();
